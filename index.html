@@ -1,0 +1,646 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>DART NOVA — Politique de confidentialité</title>
+    <meta
+      name="description"
+      content="Politique de confidentialité de l'application DART NOVA : vos parties restent sur votre téléphone."
+    />
+    <!--
+      ⚠️ CETTE PAGE NE CHARGE RIEN DEPUIS UN AUTRE SERVEUR.
+
+      Pas de police distante, pas de feuille de style externe, pas de script tiers,
+      pas de cookie. Une politique de confidentialité qui ferait charger une police
+      par Google enverrait l'adresse IP du lecteur à Google pour lui dire qu'on ne
+      le suit pas. Tout est donc dans ce fichier, et il n'y en a qu'un.
+    -->
+    <style>
+      :root {
+        --fond: #faf9f6;
+        --surface: #f1efe9;
+        --ligne: #ddd8cc;
+        --encre: #1a1813;
+        --muet: #6a6458;
+        --or: #9a6f0c;
+        --or-fond: #f6ecd0;
+        --corps: ui-sans-serif, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+        --mono: ui-monospace, 'Cascadia Mono', Consolas, 'Liberation Mono', monospace;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --fond: #0f0f13;
+          --surface: #17171d;
+          --ligne: #2a2a33;
+          --encre: #ece9e2;
+          --muet: #9a958a;
+          --or: #e9b32e;
+          --or-fond: #241d0c;
+        }
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        background: var(--fond);
+        color: var(--encre);
+        font-family: var(--corps);
+        font-size: 17px;
+        line-height: 1.6;
+        -webkit-text-size-adjust: 100%;
+      }
+      .page {
+        max-width: 760px;
+        margin: 0 auto;
+        padding: 32px 20px 96px;
+      }
+      header {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        gap: 16px;
+        flex-wrap: wrap;
+        border-bottom: 1px solid var(--ligne);
+        padding-bottom: 14px;
+      }
+      .marque {
+        font-weight: 700;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        font-size: 15px;
+        color: var(--or);
+      }
+      .langues {
+        display: flex;
+        gap: 6px;
+      }
+      .langues button {
+        font: inherit;
+        font-size: 14px;
+        padding: 5px 12px;
+        border: 1px solid var(--ligne);
+        border-radius: 999px;
+        background: transparent;
+        color: var(--muet);
+        cursor: pointer;
+      }
+      .langues button[aria-pressed='true'] {
+        background: var(--or-fond);
+        border-color: var(--or);
+        color: var(--or);
+        font-weight: 600;
+      }
+      .langues button:focus-visible {
+        outline: 2px solid var(--or);
+        outline-offset: 2px;
+      }
+      h1 {
+        font-size: 34px;
+        line-height: 1.15;
+        margin: 28px 0 6px;
+        text-wrap: balance;
+      }
+      .maj {
+        color: var(--muet);
+        font-size: 15px;
+        margin: 0 0 28px;
+      }
+      h2 {
+        font-size: 21px;
+        margin: 40px 0 10px;
+        text-wrap: balance;
+      }
+      h3 {
+        font-size: 17px;
+        margin: 24px 0 6px;
+      }
+      p,
+      li {
+        max-width: 68ch;
+      }
+      .phrase {
+        background: var(--or-fond);
+        border-left: 3px solid var(--or);
+        padding: 16px 18px;
+        margin: 22px 0;
+      }
+      .phrase p {
+        margin: 0;
+      }
+      .tableau {
+        overflow-x: auto;
+        border: 1px solid var(--ligne);
+        border-radius: 4px;
+        margin: 16px 0;
+      }
+      table {
+        border-collapse: collapse;
+        width: 100%;
+        min-width: 460px;
+        font-size: 15.5px;
+      }
+      th,
+      td {
+        text-align: left;
+        vertical-align: top;
+        padding: 10px 12px;
+        border-bottom: 1px solid var(--ligne);
+      }
+      th {
+        background: var(--surface);
+        font-size: 13.5px;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: var(--muet);
+        font-weight: 600;
+      }
+      tr:last-child td {
+        border-bottom: 0;
+      }
+      .verif {
+        font-family: var(--mono);
+        font-size: 13.5px;
+        color: var(--muet);
+        border-left: 2px solid var(--ligne);
+        padding: 4px 0 4px 14px;
+        margin: 14px 0;
+      }
+      a {
+        color: var(--or);
+      }
+      footer {
+        margin-top: 56px;
+        padding-top: 16px;
+        border-top: 1px solid var(--ligne);
+        color: var(--muet);
+        font-size: 14px;
+      }
+      [hidden] {
+        display: none !important;
+      }
+      @media (max-width: 480px) {
+        h1 {
+          font-size: 28px;
+        }
+        body {
+          font-size: 16px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <header>
+        <span class="marque">DART NOVA</span>
+        <div class="langues" role="group" aria-label="Langue / Language">
+          <button type="button" data-langue="fr" aria-pressed="true">Français</button>
+          <button type="button" data-langue="en" aria-pressed="false">English</button>
+        </div>
+      </header>
+
+      <!-- ═══════════════════════ FRANÇAIS ═══════════════════════ -->
+      <main id="fr" lang="fr">
+        <h1>Politique de confidentialité</h1>
+        <p class="maj">Dernière mise à jour : 10 septembre 2026.</p>
+
+        <div class="phrase">
+          <p>
+            <strong>Vos parties, vos profils et vos statistiques restent sur votre téléphone.</strong>
+            L'application ne crée aucun compte, ne demande aucune adresse électronique, et n'envoie rien
+            nulle part — <strong>sauf</strong> si vous jouez une partie en ligne, et seulement le temps de
+            cette partie.
+          </p>
+        </div>
+
+        <h2>1. Ce que l'application enregistre sur votre téléphone</h2>
+        <p>Tout y reste, et rien n'en sort de lui-même.</p>
+        <div class="tableau">
+          <table>
+            <thead>
+              <tr>
+                <th>Donnée</th>
+                <th>Ce que c'est</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Vos profils</td>
+                <td>Le pseudo que vous choisissez, un avatar, une couleur</td>
+              </tr>
+              <tr>
+                <td>Vos parties</td>
+                <td>Chaque fléchette de chaque tour, la date, le mode, les réglages</td>
+              </tr>
+              <tr>
+                <td>Vos statistiques et badges</td>
+                <td>Calculés à partir des parties ci-dessus</td>
+              </tr>
+              <tr>
+                <td>Vos réglages</td>
+                <td>Thème, police, langue, vibrations, voix, préférences de jeu</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p>
+          <strong>Vous seul y avez accès.</strong> Aucun de ces éléments n'est transmis, sauvegardé en
+          ligne, ou associé à une identité. Si vous désinstallez l'application, tout disparaît avec elle —
+          c'est pourquoi l'écran des profils propose un export.
+        </p>
+
+        <h2>2. Ce que l'application ne fait pas</h2>
+        <ul>
+          <li><strong>Aucun compte.</strong> Pas d'inscription, pas d'adresse électronique, pas de mot de passe.</li>
+          <li>
+            <strong>Aucune publicité, aucun traceur, aucune mesure d'audience</strong> dans cette version
+            de l'application (voir le point 7).
+          </li>
+          <li><strong>Aucune localisation.</strong> L'application ne demande pas cette permission.</li>
+          <li><strong>Aucun accès aux contacts, aux photos, au micro ou à la caméra.</strong></li>
+          <li><strong>Aucun profilage, aucune revente, aucun partage avec un tiers.</strong></li>
+        </ul>
+        <p class="verif">
+          La seule permission qu'elle vous demande est l'accès à Internet, et elle ne sert qu'au mode en
+          ligne.
+        </p>
+
+        <h2>3. Le mode en ligne — la seule chose qui sort de votre téléphone</h2>
+        <p>
+          Quand vous créez ou rejoignez une partie en ligne, il faut bien que les autres joueurs voient vos
+          coups. Voici <strong>exactement</strong> ce qui est envoyé, et rien d'autre.
+        </p>
+        <div class="tableau">
+          <table>
+            <thead>
+              <tr>
+                <th>Envoyé au serveur</th>
+                <th>Pourquoi</th>
+                <th>Combien de temps</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Le <strong>pseudo</strong> que vous saisissez pour cette partie</td>
+                <td>Pour que les autres sachent qui joue</td>
+                <td>12 heures au plus</td>
+              </tr>
+              <tr>
+                <td>Un <strong>identifiant technique</strong> de votre appareil</td>
+                <td>Pour vous rendre votre place si l'application se ferme</td>
+                <td>12 heures au plus</td>
+              </tr>
+              <tr>
+                <td>Le <strong>code de la partie</strong>, le mode et ses réglages</td>
+                <td>Pour que les autres rejoignent la bonne partie</td>
+                <td>12 heures au plus</td>
+              </tr>
+              <tr>
+                <td>Les <strong>coups joués</strong> : cibles, multiplicateurs, tours</td>
+                <td>Pour que le tableau des scores soit le même chez tout le monde</td>
+                <td>12 heures au plus</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p>
+          <strong>Ce qui n'est PAS envoyé</strong> : vos profils locaux, votre historique, vos
+          statistiques, vos badges, vos réglages, et les parties que vous jouez hors ligne.
+        </p>
+
+        <h3>L'identifiant d'appareil</h3>
+        <p>
+          C'est un numéro aléatoire, créé par l'application lors de sa première connexion en ligne.
+          <strong>Il n'est lié à rien</strong> : ni à votre téléphone, ni à un compte, ni à vous. Il sert
+          uniquement à ce que le serveur reconnaisse votre place si vous perdez la connexion en cours de
+          partie.
+        </p>
+
+        <h3>Douze heures, puis effacement</h3>
+        <p>
+          Une partie en ligne <strong>expire au bout de douze heures</strong>, et tout ce qui la concerne
+          est <strong>supprimé du serveur</strong> : le salon, les places, les pseudos, les coups. Un
+          ménage automatique s'exécute <strong>toutes les heures</strong> pour supprimer ce qui a expiré.
+        </p>
+        <p>
+          <strong>Votre copie de la partie, elle, reste sur votre téléphone</strong> et n'est pas effacée :
+          c'est la vôtre.
+        </p>
+
+        <h2>4. Où sont les données du mode en ligne</h2>
+        <p>
+          Le serveur est hébergé par <strong>Supabase</strong>, dans l'Union européenne. Les communications
+          sont chiffrées (HTTPS). L'accès aux données d'une partie est limité à ses participants par des
+          règles appliquées côté serveur — connaître un code ne suffit pas à lire les coups d'une partie où
+          l'on n'est pas assis.
+        </p>
+
+        <h2>5. Vos droits, et comment les exercer</h2>
+        <p>
+          Comme l'application ne crée aucun compte, il n'existe <strong>aucun dossier à votre nom</strong> à
+          consulter ou à supprimer.
+        </p>
+        <div class="tableau">
+          <table>
+            <thead>
+              <tr>
+                <th>Ce que vous voulez faire</th>
+                <th>Comment</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Voir vos données</strong></td>
+                <td>Écran Profils → « Tout exporter ». Vous obtenez un fichier lisible contenant tout</td>
+              </tr>
+              <tr>
+                <td><strong>Supprimer un profil</strong></td>
+                <td>Écran de statistiques du profil → « Supprimer ce profil »</td>
+              </tr>
+              <tr>
+                <td><strong>Supprimer une partie</strong></td>
+                <td>Onglet Historique → la croix, sur la ligne de la partie</td>
+              </tr>
+              <tr>
+                <td><strong>Tout supprimer</strong></td>
+                <td>Désinstaller l'application supprime l'intégralité des données locales</td>
+              </tr>
+              <tr>
+                <td><strong>Supprimer une partie en ligne</strong></td>
+                <td>
+                  Écran « Partie en ligne » → la croix sur la partie. Sinon, elle disparaît d'elle-même au
+                  bout de douze heures
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2>6. Les enfants</h2>
+        <p>
+          L'application ne collecte aucune donnée permettant d'identifier qui que ce soit, quel que soit son
+          âge. Le pseudo saisi pour une partie en ligne est visible des autres joueurs de cette partie :
+          c'est le seul élément que vous choisissez de montrer, et vous n'êtes pas obligé d'y mettre votre
+          vrai nom.
+        </p>
+
+        <h2>7. Modifications</h2>
+        <p>
+          Toute modification de cette politique sera publiée à cette adresse, avec sa date. La version en
+          vigueur est celle qui porte la date la plus récente.
+        </p>
+        <p>
+          <strong>Et si cela devait changer.</strong> Une version future pourrait proposer de la publicité,
+          avec un achat pour s'en passer. Le jour où ce sera le cas, cette page sera mise à jour
+          <strong>et datée avant</strong> la sortie de cette version, la fiche du Play Store le déclarera, et
+          votre consentement vous sera demandé là où la loi l'exige.
+          <strong>Aucune publicité ne peut apparaître sans que cette page le dise d'abord</strong> — c'est
+          ce que vous êtes en droit de vérifier ici.
+        </p>
+
+        <h2>8. Contact</h2>
+        <p>
+          Une question sur cette politique ou sur vos données :
+          <a href="mailto:dartnova.contact@gmail.com">dartnova.contact@gmail.com</a>.
+        </p>
+
+        <footer>
+          <p>
+            DART NOVA — application de fléchettes pour Android.<br />
+            Cette page ne charge aucune ressource extérieure, n'utilise aucun cookie et ne mesure rien.
+          </p>
+        </footer>
+      </main>
+
+      <!-- ═══════════════════════ ENGLISH ═══════════════════════ -->
+      <main id="en" lang="en" hidden>
+        <h1>Privacy policy</h1>
+        <p class="maj">Last updated: 10 September 2026.</p>
+
+        <div class="phrase">
+          <p>
+            <strong>Your games, your profiles and your statistics stay on your phone.</strong> The app
+            creates no account, asks for no email address, and sends nothing anywhere —
+            <strong>except</strong> when you play an online game, and only for the duration of that game.
+          </p>
+        </div>
+
+        <h2>1. What the app stores on your phone</h2>
+        <p>Everything stays there, and nothing leaves on its own.</p>
+        <div class="tableau">
+          <table>
+            <thead>
+              <tr>
+                <th>Data</th>
+                <th>What it is</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Your profiles</td>
+                <td>The nickname you choose, an avatar, a colour</td>
+              </tr>
+              <tr>
+                <td>Your games</td>
+                <td>Every dart of every turn, the date, the mode, the settings</td>
+              </tr>
+              <tr>
+                <td>Your statistics and badges</td>
+                <td>Computed from the games above</td>
+              </tr>
+              <tr>
+                <td>Your settings</td>
+                <td>Theme, font, language, vibration, voice, game preferences</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p>
+          <strong>You alone have access to them.</strong> None of it is transmitted, backed up online, or
+          tied to an identity. If you uninstall the app, everything goes with it — which is why the
+          profiles screen offers an export.
+        </p>
+
+        <h2>2. What the app does not do</h2>
+        <ul>
+          <li><strong>No account.</strong> No sign-up, no email address, no password.</li>
+          <li>
+            <strong>No advertising, no tracker, no analytics</strong> in this version of the app (see
+            point 7).
+          </li>
+          <li><strong>No location.</strong> The app does not request that permission.</li>
+          <li><strong>No access to contacts, photos, microphone or camera.</strong></li>
+          <li><strong>No profiling, no resale, no sharing with third parties.</strong></li>
+        </ul>
+        <p class="verif">
+          The only permission it asks of you is internet access, and it is used solely for online play.
+        </p>
+
+        <h2>3. Online play — the only thing that leaves your phone</h2>
+        <p>
+          When you create or join an online game, the other players have to see your throws. Here is
+          <strong>exactly</strong> what is sent, and nothing else.
+        </p>
+        <div class="tableau">
+          <table>
+            <thead>
+              <tr>
+                <th>Sent to the server</th>
+                <th>Why</th>
+                <th>For how long</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>The <strong>nickname</strong> you type for that game</td>
+                <td>So the others know who is playing</td>
+                <td>12 hours at most</td>
+              </tr>
+              <tr>
+                <td>A <strong>technical identifier</strong> for your device</td>
+                <td>To give your seat back if the app closes</td>
+                <td>12 hours at most</td>
+              </tr>
+              <tr>
+                <td>The <strong>game code</strong>, the mode and its settings</td>
+                <td>So the others join the right game</td>
+                <td>12 hours at most</td>
+              </tr>
+              <tr>
+                <td>The <strong>throws</strong>: targets, multipliers, turns</td>
+                <td>So everyone sees the same scoreboard</td>
+                <td>12 hours at most</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p>
+          <strong>What is NOT sent</strong>: your local profiles, your history, your statistics, your
+          badges, your settings, and the games you play offline.
+        </p>
+
+        <h3>The device identifier</h3>
+        <p>
+          It is a random number, created by the app the first time it connects online.
+          <strong>It is tied to nothing</strong>: not to your phone, not to an account, not to you. Its only
+          purpose is for the server to recognise your seat if you lose the connection mid-game.
+        </p>
+
+        <h3>Twelve hours, then erased</h3>
+        <p>
+          An online game <strong>expires after twelve hours</strong>, and everything about it is
+          <strong>deleted from the server</strong>: the room, the seats, the nicknames, the throws. An
+          automatic clean-up runs <strong>every hour</strong> to remove what has expired.
+        </p>
+        <p><strong>Your own copy of the game stays on your phone</strong> and is not erased: it is yours.</p>
+
+        <h2>4. Where the online data lives</h2>
+        <p>
+          The server is hosted by <strong>Supabase</strong>, in the European Union. Communications are
+          encrypted (HTTPS). Access to a game's data is limited to its participants by rules enforced on the
+          server — knowing a code is not enough to read the throws of a game you are not seated in.
+        </p>
+
+        <h2>5. Your rights, and how to exercise them</h2>
+        <p>
+          Since the app creates no account, there is <strong>no file in your name</strong> to consult or
+          delete.
+        </p>
+        <div class="tableau">
+          <table>
+            <thead>
+              <tr>
+                <th>What you want to do</th>
+                <th>How</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>See your data</strong></td>
+                <td>Profiles screen → “Export everything”. You get a readable file containing all of it</td>
+              </tr>
+              <tr>
+                <td><strong>Delete a profile</strong></td>
+                <td>Profile statistics screen → “Delete this profile”</td>
+              </tr>
+              <tr>
+                <td><strong>Delete a game</strong></td>
+                <td>History tab → the cross, on the game's row</td>
+              </tr>
+              <tr>
+                <td><strong>Delete everything</strong></td>
+                <td>Uninstalling the app removes all local data</td>
+              </tr>
+              <tr>
+                <td><strong>Delete an online game</strong></td>
+                <td>
+                  “Online game” screen → the cross on the game. Otherwise it disappears by itself after
+                  twelve hours
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2>6. Children</h2>
+        <p>
+          The app collects no data that could identify anyone, at any age. The nickname typed for an online
+          game is visible to the other players of that game: it is the only thing you choose to show, and
+          you do not have to put your real name in it.
+        </p>
+
+        <h2>7. Changes</h2>
+        <p>
+          Any change to this policy will be published at this address, with its date. The version in force
+          is the one bearing the most recent date.
+        </p>
+        <p>
+          <strong>And if that were to change.</strong> A future version may offer advertising, with a
+          purchase to remove it. On the day that happens, this page will be updated
+          <strong>and dated before</strong> that version ships, the Play Store listing will declare it, and
+          your consent will be asked wherever the law requires it.
+          <strong>No advertising can appear without this page saying so first</strong> — that is what you
+          are entitled to check here.
+        </p>
+
+        <h2>8. Contact</h2>
+        <p>
+          A question about this policy or about your data:
+          <a href="mailto:dartnova.contact@gmail.com">dartnova.contact@gmail.com</a>.
+        </p>
+
+        <footer>
+          <p>
+            DART NOVA — darts app for Android.<br />
+            This page loads no external resource, uses no cookie and measures nothing.
+          </p>
+        </footer>
+      </main>
+    </div>
+
+    <script>
+      /* Le sélecteur de langue — dix lignes, aucune dépendance. La page part en
+         français ; l'anglais s'affiche si le navigateur le demande, et le choix
+         du lecteur l'emporte toujours. */
+      (function () {
+        var pages = { fr: document.getElementById('fr'), en: document.getElementById('en') };
+        var boutons = document.querySelectorAll('.langues button');
+        function montrer(langue) {
+          pages.fr.hidden = langue !== 'fr';
+          pages.en.hidden = langue !== 'en';
+          document.documentElement.lang = langue;
+          for (var i = 0; i < boutons.length; i++) {
+            boutons[i].setAttribute('aria-pressed', String(boutons[i].dataset.langue === langue));
+          }
+        }
+        for (var i = 0; i < boutons.length; i++) {
+          boutons[i].addEventListener('click', function (e) {
+            montrer(e.currentTarget.dataset.langue);
+          });
+        }
+        if ((navigator.language || 'fr').slice(0, 2) !== 'fr') montrer('en');
+      })();
+    </script>
+  </body>
+</html>
