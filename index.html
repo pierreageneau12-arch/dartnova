@@ -32,7 +32,8 @@
         --muet: #6a6458;
         --or: #9a6f0c;
         --or-fond: #f6ecd0;
-        --corps: ui-sans-serif, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+        --corps:
+          ui-sans-serif, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
         --mono: ui-monospace, 'Cascadia Mono', Consolas, 'Liberation Mono', monospace;
       }
       @media (prefers-color-scheme: dark) {
@@ -210,15 +211,17 @@
       <!-- ═══════════════════════ FRANÇAIS ═══════════════════════ -->
       <main id="fr" lang="fr">
         <h1>Politique de confidentialité</h1>
-        <p class="maj">Dernière mise à jour : 25 septembre 2026.</p>
+        <p class="maj">Dernière mise à jour : 15 octobre 2026.</p>
 
         <div class="phrase">
           <p>
-            <strong>Vos parties, vos profils et vos statistiques restent sur votre téléphone.</strong>
-            L'application ne crée aucun compte, ne demande aucune adresse électronique, et n'envoie rien
-            nulle part — <strong>sauf</strong> si vous jouez une partie en ligne, et seulement le temps de
-            cette partie. Pour vous proposer ses mises à jour, elle interroge aussi le Play Store de votre
-            téléphone (point 5).
+            <strong
+              >Vos parties, vos profils et vos statistiques restent sur votre téléphone.</strong
+            >
+            L'application ne crée aucun compte, ne demande aucune adresse électronique, et n'envoie
+            rien nulle part — <strong>sauf</strong> si vous jouez une partie en ligne, et seulement
+            le temps de cette partie. Pour vous proposer ses mises à jour, elle interroge aussi le
+            Play Store de votre téléphone (point 5).
           </p>
         </div>
 
@@ -249,35 +252,44 @@
                 <td>Vos réglages</td>
                 <td>Thème, police, langue, vibrations, voix, préférences de jeu</td>
               </tr>
+              <tr>
+                <td>Les joueurs que vous bloquez en ligne</td>
+                <td>L'identifiant technique de leur appareil, et le nom qu'ils portaient</td>
+              </tr>
             </tbody>
           </table>
         </div>
         <p>
-          <strong>Vous seul y avez accès.</strong> Aucun de ces éléments n'est transmis, sauvegardé en
-          ligne, ou associé à une identité. Si vous désinstallez l'application, tout disparaît avec elle —
-          c'est pourquoi l'écran des profils propose un export.
+          <strong>Vous seul y avez accès.</strong> Aucun de ces éléments n'est transmis, sauvegardé
+          en ligne, ou associé à une identité. Si vous désinstallez l'application, tout disparaît
+          avec elle — c'est pourquoi l'écran des profils propose un export.
         </p>
 
         <h2>2. Ce que l'application ne fait pas</h2>
         <ul>
-          <li><strong>Aucun compte.</strong> Pas d'inscription, pas d'adresse électronique, pas de mot de passe.</li>
           <li>
-            <strong>Aucune publicité, aucun traceur, aucune mesure d'audience</strong> dans cette version
-            de l'application (voir le point 8).
+            <strong>Aucun compte.</strong> Pas d'inscription, pas d'adresse électronique, pas de mot
+            de passe.
           </li>
-          <li><strong>Aucune localisation.</strong> L'application ne demande pas cette permission.</li>
+          <li>
+            <strong>Aucune publicité, aucun traceur, aucune mesure d'audience</strong> dans cette
+            version de l'application (voir le point 8).
+          </li>
+          <li>
+            <strong>Aucune localisation.</strong> L'application ne demande pas cette permission.
+          </li>
           <li><strong>Aucun accès aux contacts, aux photos, au micro ou à la caméra.</strong></li>
           <li><strong>Aucun profilage, aucune revente, aucun partage avec un tiers.</strong></li>
         </ul>
         <p class="verif">
-          La seule permission qu'elle vous demande est l'accès à Internet, et elle ne sert qu'au mode en
-          ligne.
+          La seule permission qu'elle vous demande est l'accès à Internet, et elle ne sert qu'au
+          mode en ligne.
         </p>
 
         <h2>3. Le mode en ligne — ce que l'application envoie</h2>
         <p>
-          Quand vous créez ou rejoignez une partie en ligne, il faut bien que les autres joueurs voient vos
-          coups. Voici <strong>exactement</strong> ce qui est envoyé, et rien d'autre.
+          Quand vous créez ou rejoignez une partie en ligne, il faut bien que les autres joueurs
+          voient vos coups. Voici <strong>exactement</strong> ce qui est envoyé, et rien d'autre.
         </p>
         <div class="tableau">
           <table>
@@ -311,8 +323,8 @@
               </tr>
               <tr>
                 <td>
-                  Le <strong>badge que vous portez</strong>, s'il y en a un : seulement lequel c'est (par
-                  exemple « Intouchable »)
+                  Le <strong>badge que vous portez</strong>, s'il y en a un : seulement lequel c'est
+                  (par exemple « Intouchable »), et pour « Inarrêtable » la série qu'il affiche
                 </td>
                 <td>Pour que les autres le voient à côté de votre pseudo</td>
                 <td>12 heures au plus</td>
@@ -328,49 +340,63 @@
         <h3>L'identifiant d'appareil</h3>
         <p>
           C'est un numéro aléatoire, créé par l'application lors de sa première connexion en ligne.
-          <strong>Il n'est lié à rien</strong> : ni à votre téléphone, ni à un compte, ni à vous. Il sert
-          uniquement à ce que le serveur reconnaisse votre place si vous perdez la connexion en cours de
-          partie.
+          <strong>Il n'est lié à rien</strong> : ni à votre téléphone, ni à un compte, ni à vous. Il
+          sert uniquement à ce que le serveur reconnaisse votre place si vous perdez la connexion en
+          cours de partie.
         </p>
 
         <h3>Douze heures, puis effacement</h3>
         <p>
-          Une partie en ligne <strong>expire au bout de douze heures</strong>, et tout ce qui la concerne
-          est <strong>supprimé du serveur</strong> : le salon, les places, les pseudos, les coups. Un
-          ménage automatique s'exécute <strong>toutes les heures</strong> pour supprimer ce qui a expiré.
+          Une partie en ligne <strong>expire au bout de douze heures</strong>, et tout ce qui la
+          concerne est <strong>supprimé du serveur</strong> : le salon, les places, les pseudos, les
+          coups. Un ménage automatique s'exécute <strong>toutes les heures</strong> pour supprimer
+          ce qui a expiré.
         </p>
         <p>
-          <strong>Votre copie de la partie, elle, reste sur votre téléphone</strong> et n'est pas effacée :
-          c'est la vôtre.
+          <strong>Votre copie de la partie, elle, reste sur votre téléphone</strong> et n'est pas
+          effacée : c'est la vôtre.
         </p>
+
+        <h3>Si vous signalez un joueur</h3>
+        <p>
+          Vous pouvez signaler un joueur d'une partie en ligne (un nom choquant, un comportement
+          déplacé). Le serveur enregistre alors <strong>le nom qui s'affichait</strong>,
+          <strong>le motif</strong> choisi dans une liste, <strong>la date</strong>, le
+          <strong>code de la partie</strong> et l'<strong>identifiant technique</strong> des deux
+          appareils — rien d'autre, et aucun texte libre. Ce signalement n'est lu que par l'éditeur
+          de l'application, pour l'examiner, et il est
+          <strong>effacé au bout de trente jours</strong> par le même ménage automatique.
+        </p>
+        <p>Bloquer un joueur, en revanche, n'envoie rien : la liste reste sur votre téléphone.</p>
 
         <h2>4. Où sont les données du mode en ligne</h2>
         <p>
-          Le serveur est hébergé par <strong>Supabase</strong>, dans l'Union européenne. Les communications
-          sont chiffrées (HTTPS). L'accès aux données d'une partie est limité à ses participants par des
-          règles appliquées côté serveur — connaître un code ne suffit pas à lire les coups d'une partie où
-          l'on n'est pas assis.
+          Le serveur est hébergé par <strong>Supabase</strong>, dans l'Union européenne. Les
+          communications sont chiffrées (HTTPS). L'accès aux données d'une partie est limité à ses
+          participants par des règles appliquées côté serveur — connaître un code ne suffit pas à
+          lire les coups d'une partie où l'on n'est pas assis.
         </p>
 
         <h2>5. Les mises à jour de l'application</h2>
         <p>
           À son ouverture, et quand vous y revenez, l'application demande au
           <strong>Play Store installé sur votre téléphone</strong>
-          s'il existe une version plus récente, pour vous proposer de l'installer. C'est le Play Store qui
-          interroge Google, comme pour toute application qu'il met à jour. Selon Google, il transmet la
-          version de l'application et des caractéristiques techniques de l'appareil, uniquement pour savoir
-          si une mise à jour existe et quelle est sa taille ; ces informations sont chiffrées, ne sont
-          transmises à aucun tiers, et sont effacées après une durée fixe.
+          s'il existe une version plus récente, pour vous proposer de l'installer. C'est le Play
+          Store qui interroge Google, comme pour toute application qu'il met à jour. Selon Google,
+          il transmet la version de l'application et des caractéristiques techniques de l'appareil,
+          uniquement pour savoir si une mise à jour existe et quelle est sa taille ; ces
+          informations sont chiffrées, ne sont transmises à aucun tiers, et sont effacées après une
+          durée fixe.
         </p>
         <p>
-          <strong>Aucune de vos données de jeu</strong> — profils, parties, statistiques — n'entre dans
-          cette question.
+          <strong>Aucune de vos données de jeu</strong> — profils, parties, statistiques — n'entre
+          dans cette question.
         </p>
 
         <h2>6. Vos droits, et comment les exercer</h2>
         <p>
-          Comme l'application ne crée aucun compte, il n'existe <strong>aucun dossier à votre nom</strong> à
-          consulter ou à supprimer.
+          Comme l'application ne crée aucun compte, il n'existe
+          <strong>aucun dossier à votre nom</strong> à consulter ou à supprimer.
         </p>
         <div class="tableau">
           <table>
@@ -383,7 +409,9 @@
             <tbody>
               <tr>
                 <td><strong>Voir vos données</strong></td>
-                <td>Écran Profils → « Tout exporter ». Vous obtenez un fichier lisible contenant tout</td>
+                <td>
+                  Écran Profils → « Tout exporter ». Vous obtenez un fichier lisible contenant tout
+                </td>
               </tr>
               <tr>
                 <td><strong>Supprimer un profil</strong></td>
@@ -400,8 +428,8 @@
               <tr>
                 <td><strong>Supprimer une partie en ligne</strong></td>
                 <td>
-                  Écran « Partie en ligne » → la croix sur la partie. Sinon, elle disparaît d'elle-même au
-                  bout de douze heures
+                  Écran « Partie en ligne » → la croix sur la partie. Sinon, elle disparaît
+                  d'elle-même au bout de douze heures
                 </td>
               </tr>
             </tbody>
@@ -410,24 +438,24 @@
 
         <h2>7. Les enfants</h2>
         <p>
-          L'application ne collecte aucune donnée permettant d'identifier qui que ce soit, quel que soit son
-          âge. Le pseudo saisi pour une partie en ligne est visible des autres joueurs de cette partie :
-          c'est le seul élément que vous choisissez de montrer, et vous n'êtes pas obligé d'y mettre votre
-          vrai nom.
+          L'application ne collecte aucune donnée permettant d'identifier qui que ce soit, quel que
+          soit son âge. Le pseudo saisi pour une partie en ligne est visible des autres joueurs de
+          cette partie : c'est le seul élément que vous choisissez de montrer, et vous n'êtes pas
+          obligé d'y mettre votre vrai nom.
         </p>
 
         <h2>8. Modifications</h2>
         <p>
-          Toute modification de cette politique sera publiée à cette adresse, avec sa date. La version en
-          vigueur est celle qui porte la date la plus récente.
+          Toute modification de cette politique sera publiée à cette adresse, avec sa date. La
+          version en vigueur est celle qui porte la date la plus récente.
         </p>
         <p>
-          <strong>Et si cela devait changer.</strong> Une version future pourrait proposer de la publicité,
-          avec un achat pour s'en passer. Le jour où ce sera le cas, cette page sera mise à jour
-          <strong>et datée avant</strong> la sortie de cette version, la fiche du Play Store le déclarera, et
-          votre consentement vous sera demandé là où la loi l'exige.
-          <strong>Aucune publicité ne peut apparaître sans que cette page le dise d'abord</strong> — c'est
-          ce que vous êtes en droit de vérifier ici.
+          <strong>Et si cela devait changer.</strong> Une version future pourrait proposer de la
+          publicité, avec un achat pour s'en passer. Le jour où ce sera le cas, cette page sera mise
+          à jour <strong>et datée avant</strong> la sortie de cette version, la fiche du Play Store
+          le déclarera, et votre consentement vous sera demandé là où la loi l'exige.
+          <strong>Aucune publicité ne peut apparaître sans que cette page le dise d'abord</strong> —
+          c'est ce que vous êtes en droit de vérifier ici.
         </p>
 
         <h2>9. Contact</h2>
@@ -439,7 +467,8 @@
         <footer>
           <p>
             DART NOVA — application de fléchettes pour Android.<br />
-            Cette page ne charge aucune ressource extérieure, n'utilise aucun cookie et ne mesure rien.
+            Cette page ne charge aucune ressource extérieure, n'utilise aucun cookie et ne mesure
+            rien.
           </p>
         </footer>
       </main>
@@ -447,14 +476,14 @@
       <!-- ═══════════════════════ ENGLISH ═══════════════════════ -->
       <main id="en" lang="en" hidden>
         <h1>Privacy policy</h1>
-        <p class="maj">Last updated: 25 September 2026.</p>
+        <p class="maj">Last updated: 15 October 2026.</p>
 
         <div class="phrase">
           <p>
-            <strong>Your games, your profiles and your statistics stay on your phone.</strong> The app
-            creates no account, asks for no email address, and sends nothing anywhere —
-            <strong>except</strong> when you play an online game, and only for the duration of that game.
-            To offer you its updates, it also asks your phone's Play Store (point 5).
+            <strong>Your games, your profiles and your statistics stay on your phone.</strong> The
+            app creates no account, asks for no email address, and sends nothing anywhere —
+            <strong>except</strong> when you play an online game, and only for the duration of that
+            game. To offer you its updates, it also asks your phone's Play Store (point 5).
           </p>
         </div>
 
@@ -485,28 +514,33 @@
                 <td>Your settings</td>
                 <td>Theme, font, language, vibration, voice, game preferences</td>
               </tr>
+              <tr>
+                <td>The players you block online</td>
+                <td>The technical identifier of their device, and the name they used</td>
+              </tr>
             </tbody>
           </table>
         </div>
         <p>
-          <strong>You alone have access to them.</strong> None of it is transmitted, backed up online, or
-          tied to an identity. If you uninstall the app, everything goes with it — which is why the
-          profiles screen offers an export.
+          <strong>You alone have access to them.</strong> None of it is transmitted, backed up
+          online, or tied to an identity. If you uninstall the app, everything goes with it — which
+          is why the profiles screen offers an export.
         </p>
 
         <h2>2. What the app does not do</h2>
         <ul>
           <li><strong>No account.</strong> No sign-up, no email address, no password.</li>
           <li>
-            <strong>No advertising, no tracker, no analytics</strong> in this version of the app (see
-            point 8).
+            <strong>No advertising, no tracker, no analytics</strong> in this version of the app
+            (see point 8).
           </li>
           <li><strong>No location.</strong> The app does not request that permission.</li>
           <li><strong>No access to contacts, photos, microphone or camera.</strong></li>
           <li><strong>No profiling, no resale, no sharing with third parties.</strong></li>
         </ul>
         <p class="verif">
-          The only permission it asks of you is internet access, and it is used solely for online play.
+          The only permission it asks of you is internet access, and it is used solely for online
+          play.
         </p>
 
         <h2>3. Online play — what the app sends</h2>
@@ -547,7 +581,7 @@
               <tr>
                 <td>
                   The <strong>badge you wear</strong>, if any: only which one it is (for example
-                  “Untouchable”)
+                  “Untouchable”), and for “Unstoppable” the streak it shows
                 </td>
                 <td>So the others see it next to your nickname</td>
                 <td>12 hours at most</td>
@@ -556,50 +590,67 @@
           </table>
         </div>
         <p>
-          <strong>What is NOT sent</strong>: your local profiles, your history, your statistics, your
-          other badges, your settings, and the games you play offline.
+          <strong>What is NOT sent</strong>: your local profiles, your history, your statistics,
+          your other badges, your settings, and the games you play offline.
         </p>
 
         <h3>The device identifier</h3>
         <p>
           It is a random number, created by the app the first time it connects online.
-          <strong>It is tied to nothing</strong>: not to your phone, not to an account, not to you. Its only
-          purpose is for the server to recognise your seat if you lose the connection mid-game.
+          <strong>It is tied to nothing</strong>: not to your phone, not to an account, not to you.
+          Its only purpose is for the server to recognise your seat if you lose the connection
+          mid-game.
         </p>
 
         <h3>Twelve hours, then erased</h3>
         <p>
           An online game <strong>expires after twelve hours</strong>, and everything about it is
-          <strong>deleted from the server</strong>: the room, the seats, the nicknames, the throws. An
-          automatic clean-up runs <strong>every hour</strong> to remove what has expired.
+          <strong>deleted from the server</strong>: the room, the seats, the nicknames, the throws.
+          An automatic clean-up runs <strong>every hour</strong> to remove what has expired.
         </p>
-        <p><strong>Your own copy of the game stays on your phone</strong> and is not erased: it is yours.</p>
+        <p>
+          <strong>Your own copy of the game stays on your phone</strong> and is not erased: it is
+          yours.
+        </p>
+
+        <h3>If you report a player</h3>
+        <p>
+          You can report a player in an online game (an offensive name, inappropriate behaviour).
+          The server then records <strong>the name that was shown</strong>,
+          <strong>the reason</strong> picked from a list, <strong>the date</strong>, the
+          <strong>game code</strong> and the <strong>technical identifier</strong> of both devices —
+          nothing else, and no free text. The report is read only by the app's publisher, to review
+          it, and it is <strong>erased after thirty days</strong> by the same automatic clean-up.
+        </p>
+        <p>Blocking a player, on the other hand, sends nothing: the list stays on your phone.</p>
 
         <h2>4. Where the online data lives</h2>
         <p>
-          The server is hosted by <strong>Supabase</strong>, in the European Union. Communications are
-          encrypted (HTTPS). Access to a game's data is limited to its participants by rules enforced on the
-          server — knowing a code is not enough to read the throws of a game you are not seated in.
+          The server is hosted by <strong>Supabase</strong>, in the European Union. Communications
+          are encrypted (HTTPS). Access to a game's data is limited to its participants by rules
+          enforced on the server — knowing a code is not enough to read the throws of a game you are
+          not seated in.
         </p>
 
         <h2>5. App updates</h2>
         <p>
           When it opens, and when you come back to it, the app asks the
-          <strong>Play Store installed on your phone</strong> whether a newer
-          version exists, so it can offer to install it. It is the Play Store that asks Google, as it does
-          for every app it updates. According to Google, it sends the app version and technical
-          characteristics of the device, only to find out whether an update exists and how large it is;
-          this information is encrypted, is not passed to any third party, and is deleted after a fixed
+          <strong>Play Store installed on your phone</strong> whether a newer version exists, so it
+          can offer to install it. It is the Play Store that asks Google, as it does for every app
+          it updates. According to Google, it sends the app version and technical characteristics of
+          the device, only to find out whether an update exists and how large it is; this
+          information is encrypted, is not passed to any third party, and is deleted after a fixed
           period.
         </p>
         <p>
-          <strong>None of your game data</strong> — profiles, games, statistics — is part of that request.
+          <strong>None of your game data</strong> — profiles, games, statistics — is part of that
+          request.
         </p>
 
         <h2>6. Your rights, and how to exercise them</h2>
         <p>
-          Since the app creates no account, there is <strong>no file in your name</strong> to consult or
-          delete.
+          Since the app creates no account, there is <strong>no file in your name</strong> to
+          consult or delete.
         </p>
         <div class="tableau">
           <table>
@@ -612,7 +663,10 @@
             <tbody>
               <tr>
                 <td><strong>See your data</strong></td>
-                <td>Profiles screen → “Export everything”. You get a readable file containing all of it</td>
+                <td>
+                  Profiles screen → “Export everything”. You get a readable file containing all of
+                  it
+                </td>
               </tr>
               <tr>
                 <td><strong>Delete a profile</strong></td>
@@ -629,8 +683,8 @@
               <tr>
                 <td><strong>Delete an online game</strong></td>
                 <td>
-                  “Online game” screen → the cross on the game. Otherwise it disappears by itself after
-                  twelve hours
+                  “Online game” screen → the cross on the game. Otherwise it disappears by itself
+                  after twelve hours
                 </td>
               </tr>
             </tbody>
@@ -639,23 +693,23 @@
 
         <h2>7. Children</h2>
         <p>
-          The app collects no data that could identify anyone, at any age. The nickname typed for an online
-          game is visible to the other players of that game: it is the only thing you choose to show, and
-          you do not have to put your real name in it.
+          The app collects no data that could identify anyone, at any age. The nickname typed for an
+          online game is visible to the other players of that game: it is the only thing you choose
+          to show, and you do not have to put your real name in it.
         </p>
 
         <h2>8. Changes</h2>
         <p>
-          Any change to this policy will be published at this address, with its date. The version in force
-          is the one bearing the most recent date.
+          Any change to this policy will be published at this address, with its date. The version in
+          force is the one bearing the most recent date.
         </p>
         <p>
-          <strong>And if that were to change.</strong> A future version may offer advertising, with a
-          purchase to remove it. On the day that happens, this page will be updated
-          <strong>and dated before</strong> that version ships, the Play Store listing will declare it, and
-          your consent will be asked wherever the law requires it.
-          <strong>No advertising can appear without this page saying so first</strong> — that is what you
-          are entitled to check here.
+          <strong>And if that were to change.</strong> A future version may offer advertising, with
+          a purchase to remove it. On the day that happens, this page will be updated
+          <strong>and dated before</strong> that version ships, the Play Store listing will declare
+          it, and your consent will be asked wherever the law requires it.
+          <strong>No advertising can appear without this page saying so first</strong> — that is
+          what you are entitled to check here.
         </p>
 
         <h2>9. Contact</h2>
