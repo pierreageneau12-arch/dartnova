@@ -211,7 +211,7 @@
       <!-- ═══════════════════════ FRANÇAIS ═══════════════════════ -->
       <main id="fr" lang="fr">
         <h1>Politique de confidentialité</h1>
-        <p class="maj">Dernière mise à jour : 1er novembre 2026.</p>
+        <p class="maj">Dernière mise à jour : 2 novembre 2026.</p>
 
         <div class="phrase">
           <p>
@@ -220,8 +220,9 @@
             >
             L'application ne crée aucun compte, ne demande aucune adresse électronique, et n'envoie
             rien nulle part — <strong>sauf</strong> si vous jouez une partie en ligne, et seulement
-            le temps de cette partie. Pour vous proposer ses mises à jour, elle interroge aussi le
-            Play Store de votre téléphone (point 5).
+            le temps de cette partie, <strong>ou</strong> si vous allumez la sauvegarde dans votre
+            propre Google Drive (point 5). Pour vous proposer ses mises à jour, elle interroge aussi
+            le Play Store de votre téléphone (point 6).
           </p>
         </div>
 
@@ -261,19 +262,22 @@
         </div>
         <p>
           <strong>Vous seul y avez accès.</strong> Aucun de ces éléments n'est transmis, sauvegardé
-          en ligne, ou associé à une identité. Si vous désinstallez l'application, tout disparaît
-          avec elle — c'est pourquoi l'écran des profils propose un export.
+          en ligne, ou associé à une identité — sauf dans votre propre Google Drive, si vous en
+          allumez la sauvegarde (point 5). Si vous désinstallez l'application, tout disparaît avec
+          elle — c'est pourquoi l'écran des profils propose un export, et la sauvegarde dans votre
+          Drive.
         </p>
 
         <h2>2. Ce que l'application ne fait pas</h2>
         <ul>
           <li>
             <strong>Aucun compte.</strong> Pas d'inscription, pas d'adresse électronique, pas de mot
-            de passe.
+            de passe. La sauvegarde dans le Drive passe par votre compte Google, dans la fenêtre de
+            Google : l'application ne connaît ni votre adresse, ni votre mot de passe.
           </li>
           <li>
             <strong>Aucune publicité, aucun traceur, aucune mesure d'audience</strong> dans cette
-            version de l'application (voir le point 8).
+            version de l'application (voir le point 9).
           </li>
           <li>
             <strong>Aucune localisation.</strong> L'application ne demande pas cette permission.
@@ -313,8 +317,8 @@
           moment dans les réglages du téléphone.
         </p>
         <p class="verif">
-          Elle vous demande deux permissions : l'accès à Internet, qui ne sert qu'au mode en ligne,
-          et le micro, qui ne sert qu'à la saisie à la voix.
+          Elle vous demande deux permissions : l'accès à Internet, qui ne sert qu'au mode en ligne
+          et à la sauvegarde dans votre Drive, et le micro, qui ne sert qu'à la saisie à la voix.
         </p>
 
         <h2>3. Le mode en ligne — ce que l'application envoie</h2>
@@ -409,7 +413,42 @@
           lire les coups d'une partie où l'on n'est pas assis.
         </p>
 
-        <h2>5. Les mises à jour de l'application</h2>
+        <h2>5. La sauvegarde dans votre Google Drive — si vous l'allumez</h2>
+        <p>
+          Elle est <strong>éteinte</strong> tant que vous ne l'allumez pas (écran Profils → «
+          Activer la sauvegarde »). Allumée, l'application copie vos
+          <strong>profils, vos parties finies et vos tournois finis</strong> dans
+          <strong>votre propre Google Drive</strong>, pour que vous les retrouviez sur vos autres
+          appareils connectés au même compte Google.
+        </p>
+        <ul>
+          <li>
+            <strong>Un dossier privé.</strong> Les copies vont dans le dossier réservé à
+            l'application dans votre Drive : il n'apparaît pas parmi vos fichiers, aucune autre
+            application ne peut le lire, et il compte sur votre espace Drive. L'application ne
+            demande que cette autorisation (« drive.appdata ») : elle ne voit
+            <strong>rien d'autre</strong> de votre Drive.
+          </li>
+          <li>
+            <strong>De votre téléphone à votre Drive, directement.</strong> Rien ne passe par un
+            serveur de DART NOVA : personne d'autre que vous n'y a accès, et l'application ne reçoit
+            pas votre adresse électronique.
+          </li>
+          <li>
+            <strong>Ce qui part</strong> : les données du tableau du point 1, sauf vos réglages et
+            la liste des joueurs bloqués. Une partie en cours, et votre identité du mode en ligne,
+            ne partent pas.
+          </li>
+          <li>
+            <strong>L'éteindre</strong> arrête tout envoi aussitôt. Pour effacer ce qu'elle a déjà
+            copié : Google Drive sur le web → Paramètres → Gérer les applications → DART NOVA →
+            Options → « Supprimer les données d'application masquées ». Pour retirer l'autorisation
+            : votre compte Google → Sécurité → Vos connexions à des applications et services tiers.
+          </li>
+        </ul>
+        <p>Le stockage dans votre Drive relève des règles de confidentialité de Google.</p>
+
+        <h2>6. Les mises à jour de l'application</h2>
         <p>
           À son ouverture, et quand vous y revenez, l'application demande au
           <strong>Play Store installé sur votre téléphone</strong>
@@ -425,7 +464,7 @@
           dans cette question.
         </p>
 
-        <h2>6. Vos droits, et comment les exercer</h2>
+        <h2>7. Vos droits, et comment les exercer</h2>
         <p>
           Comme l'application ne crée aucun compte, il n'existe
           <strong>aucun dossier à votre nom</strong> à consulter ou à supprimer.
@@ -458,6 +497,13 @@
                 <td>Désinstaller l'application supprime l'intégralité des données locales</td>
               </tr>
               <tr>
+                <td><strong>Effacer la sauvegarde du Drive</strong></td>
+                <td>
+                  Google Drive sur le web → Paramètres → Gérer les applications → DART NOVA →
+                  Options → « Supprimer les données d'application masquées »
+                </td>
+              </tr>
+              <tr>
                 <td><strong>Supprimer une partie en ligne</strong></td>
                 <td>
                   Écran « Partie en ligne » → la croix sur la partie. Sinon, elle disparaît
@@ -468,7 +514,7 @@
           </table>
         </div>
 
-        <h2>7. Les enfants</h2>
+        <h2>8. Les enfants</h2>
         <p>
           L'application ne collecte aucune donnée permettant d'identifier qui que ce soit, quel que
           soit son âge. Le pseudo saisi pour une partie en ligne est visible des autres joueurs de
@@ -476,7 +522,7 @@
           obligé d'y mettre votre vrai nom.
         </p>
 
-        <h2>8. Modifications</h2>
+        <h2>9. Modifications</h2>
         <p>
           Toute modification de cette politique sera publiée à cette adresse, avec sa date. La
           version en vigueur est celle qui porte la date la plus récente.
@@ -490,7 +536,7 @@
           c'est ce que vous êtes en droit de vérifier ici.
         </p>
 
-        <h2>9. Contact</h2>
+        <h2>10. Contact</h2>
         <p>
           Une question sur cette politique ou sur vos données :
           <a href="mailto:dartnova.contact@gmail.com">dartnova.contact@gmail.com</a>.
@@ -508,14 +554,15 @@
       <!-- ═══════════════════════ ENGLISH ═══════════════════════ -->
       <main id="en" lang="en" hidden>
         <h1>Privacy policy</h1>
-        <p class="maj">Last updated: 1 November 2026.</p>
+        <p class="maj">Last updated: 2 November 2026.</p>
 
         <div class="phrase">
           <p>
             <strong>Your games, your profiles and your statistics stay on your phone.</strong> The
             app creates no account, asks for no email address, and sends nothing anywhere —
             <strong>except</strong> when you play an online game, and only for the duration of that
-            game. To offer you its updates, it also asks your phone's Play Store (point 5).
+            game, <strong>or</strong> when you turn on the backup to your own Google Drive (point
+            5). To offer you its updates, it also asks your phone's Play Store (point 6).
           </p>
         </div>
 
@@ -555,16 +602,21 @@
         </div>
         <p>
           <strong>You alone have access to them.</strong> None of it is transmitted, backed up
-          online, or tied to an identity. If you uninstall the app, everything goes with it — which
-          is why the profiles screen offers an export.
+          online, or tied to an identity — except to your own Google Drive, if you turn its backup
+          on (point 5). If you uninstall the app, everything goes with it — which is why the
+          profiles screen offers an export, and the backup to your Drive.
         </p>
 
         <h2>2. What the app does not do</h2>
         <ul>
-          <li><strong>No account.</strong> No sign-up, no email address, no password.</li>
+          <li>
+            <strong>No account.</strong> No sign-up, no email address, no password. The Drive backup
+            goes through your Google account, in Google's own window: the app never learns your
+            address or your password.
+          </li>
           <li>
             <strong>No advertising, no tracker, no analytics</strong> in this version of the app
-            (see point 8).
+            (see point 9).
           </li>
           <li><strong>No location.</strong> The app does not request that permission.</li>
           <li><strong>No access to contacts, photos or camera.</strong></li>
@@ -600,8 +652,8 @@
           settings.
         </p>
         <p class="verif">
-          It asks you for two permissions: internet access, used solely for online play, and the
-          microphone, used solely for voice input.
+          It asks you for two permissions: internet access, used solely for online play and the
+          backup to your Drive, and the microphone, used solely for voice input.
         </p>
 
         <h2>3. Online play — what the app sends</h2>
@@ -693,7 +745,41 @@
           not seated in.
         </p>
 
-        <h2>5. App updates</h2>
+        <h2>5. The backup to your Google Drive — if you turn it on</h2>
+        <p>
+          It is <strong>off</strong> until you turn it on (Profiles screen → “Turn on backup”). When
+          it is on, the app copies your
+          <strong>profiles, finished games and finished tournaments</strong> to
+          <strong>your own Google Drive</strong>, so you find them on your other devices signed in
+          to the same Google account.
+        </p>
+        <ul>
+          <li>
+            <strong>A private folder.</strong> The copies go to the folder reserved for the app in
+            your Drive: it does not appear among your files, no other app can read it, and it counts
+            against your Drive storage. The app asks for this permission only (“drive.appdata”): it
+            sees <strong>nothing else</strong> of your Drive.
+          </li>
+          <li>
+            <strong>Straight from your phone to your Drive.</strong> Nothing goes through a DART
+            NOVA server: no one but you has access to it, and the app does not receive your email
+            address.
+          </li>
+          <li>
+            <strong>What is sent</strong>: the data in the table of point 1, except your settings
+            and the list of blocked players. A game in progress, and your online identity, are not
+            sent.
+          </li>
+          <li>
+            <strong>Turning it off</strong> stops sending at once. To erase what it has already
+            copied: Google Drive on the web → Settings → Manage apps → DART NOVA → Options → “Delete
+            hidden app data”. To remove the permission: your Google account → Security → Your
+            connections to third-party apps &amp; services.
+          </li>
+        </ul>
+        <p>Storage in your Drive is governed by Google's privacy rules.</p>
+
+        <h2>6. App updates</h2>
         <p>
           When it opens, and when you come back to it, the app asks the
           <strong>Play Store installed on your phone</strong> whether a newer version exists, so it
@@ -708,7 +794,7 @@
           request.
         </p>
 
-        <h2>6. Your rights, and how to exercise them</h2>
+        <h2>7. Your rights, and how to exercise them</h2>
         <p>
           Since the app creates no account, there is <strong>no file in your name</strong> to
           consult or delete.
@@ -742,6 +828,13 @@
                 <td>Uninstalling the app removes all local data</td>
               </tr>
               <tr>
+                <td><strong>Erase the Drive backup</strong></td>
+                <td>
+                  Google Drive on the web → Settings → Manage apps → DART NOVA → Options → “Delete
+                  hidden app data”
+                </td>
+              </tr>
+              <tr>
                 <td><strong>Delete an online game</strong></td>
                 <td>
                   “Online game” screen → the cross on the game. Otherwise it disappears by itself
@@ -752,14 +845,14 @@
           </table>
         </div>
 
-        <h2>7. Children</h2>
+        <h2>8. Children</h2>
         <p>
           The app collects no data that could identify anyone, at any age. The nickname typed for an
           online game is visible to the other players of that game: it is the only thing you choose
           to show, and you do not have to put your real name in it.
         </p>
 
-        <h2>8. Changes</h2>
+        <h2>9. Changes</h2>
         <p>
           Any change to this policy will be published at this address, with its date. The version in
           force is the one bearing the most recent date.
@@ -773,7 +866,7 @@
           what you are entitled to check here.
         </p>
 
-        <h2>9. Contact</h2>
+        <h2>10. Contact</h2>
         <p>
           A question about this policy or about your data:
           <a href="mailto:dartnova.contact@gmail.com">dartnova.contact@gmail.com</a>.
